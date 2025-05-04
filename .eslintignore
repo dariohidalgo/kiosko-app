@@ -1,0 +1,5 @@
+dist
+node_modules
+firebase-functions/lib
+vite.config.ts
+tailwind.config.js
