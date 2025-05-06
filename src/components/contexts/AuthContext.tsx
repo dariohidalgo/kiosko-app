@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       // Método 1: Verificar Custom Claims
       const idTokenResult = await user.getIdTokenResult()
-      if (idTokenResult.claims.admin === true) {
+      if (idTokenResult.claims.admin === admin) {
         setUserRole("admin")
         return
       }
